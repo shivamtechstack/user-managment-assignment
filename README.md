@@ -175,7 +175,7 @@ Switch between light/dark modes via AppBar. Theme state is maintained using `Val
 
 ## 🎥 Video Preview
 
-(preview/previewvideo.mp4)
+[Download Preview Video](preview/previewvideo.mp4)
 
 ## 👤 Author
 
