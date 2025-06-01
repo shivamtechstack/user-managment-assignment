@@ -83,51 +83,69 @@ The app follows Clean Architecture principles with layered structure:
 
 ```
 
-lib/
+- lib
+
+|
+
+├── data
+
+│   ├── models
+
+│   │   ├── post_model.dart
+
+│   │   ├── todo_model.dart
+
+│   │   └── user_model.dart
+
+│   ├── providers
+
+│   │   └── user_api_provider.dart
+
+│   └── repositories
+
+│       ├── post_repository.dart
+
+│       ├── todo_repository.dart
+
+│       └── user_repository.dart
 
 │
 
-├── blocs/
+├── logic
 
-│   ├── user_bloc.dart
+│   └── bloc
 
-│   ├── user_event.dart
+│       ├── post
 
-│   └── user_state.dart
+│       ├── todo
 
-│
-
-├── models/
-
-│   ├── user.dart
-
-│   ├── post.dart
-
-│   └── todo.dart
+│       └── user
 
 │
 
-├── providers/
+├── presentation
 
-│   └── user_api_provider.dart
+│   ├── screens
+
+│   │   ├── create_post
+
+│   │   │   └── create_post_screen.dart
+
+│   │   ├── user_detail
+
+│   │   │   └── user_detail_screen.dart
+
+│   │   └── user_list
+
+│   │       └── user_list_screen.dart
+
+│   └── widgets
+
+│       └── user_tile.dart
 
 │
 
-├── repositories/
-
-│   ├── user_repository.dart
-
-│   ├── post_repository.dart
-
-│   └── todo_repository.dart
-
-│
-
-├── screens/
-
-│   └── user_list_screen.dart
-
-│
+├── theme
 
 └── main.dart
 
@@ -157,7 +175,7 @@ Switch between light/dark modes via AppBar. Theme state is maintained using `Val
 
 ## 🎥 Video Preview
 
-[App Demo Video](preview/previewvideo.mp4)
+(preview/previewvideo.mp4)
 
 ## 👤 Author
 
