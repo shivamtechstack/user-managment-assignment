@@ -141,23 +141,23 @@ Switch between light/dark modes via AppBar. Theme state is maintained using `Val
 
 <p align="center">
 
-<img src="assets/screenshots/home_light.png" width="250" />
+<img src="preview/image11.jpeg" width="250" />
 
-<img src="assets/screenshots/home_dark.png" width="250" />
+<img src="preview/image2.jpeg" width="250" />
 
-<img src="assets/screenshots/user_details.png" width="250" />
+<img src="preview/image3.jpeg" width="250" />
 
 <br>
 
-<img src="assets/screenshots/pull_to_refresh.png" width="250" />
+<img src="preview/image4.jpeg" width="250" />
 
-<img src="assets/screenshots/theme_toggle.png" width="250" />
+<img src="preview/image5.jpeg" width="250" />
 
 </p>
 
 ## 🎥 Video Preview
 
-[App Demo Video](https://your-video-url-here)
+[App Demo Video](preview/previewvideo.mp4)
 
 ## 👤 Author
 
