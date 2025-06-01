@@ -8,98 +8,160 @@ A user management system built with Flutter using **BLoC pattern**, **clean arch
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/flutter-user-management.git
-   cd flutter-user-management
-Install dependencies:
+   git clone https://github.com/shivamtechstack/user-managment-assignment.git
+   cd user-managment-assignment
+   
+### Installation
+
+```bash
 
 flutter pub get
-Run the app:
+
+```
+
+### Running the App
+
+```bash
 
 flutter run
-To run on a specific device:
+
+```
+
+### Run on Specific Device
+
+```bash
 
 flutter devices
+
 flutter run -d <device_id>
-📱 Project Overview
-This app displays a list of users fetched from DummyJSON API, along with their associated posts and todos. It supports:
 
-Viewing user details with nested posts and todos
+```
 
-Pull-to-refresh
+## 🌟 Features
 
-Pagination and lazy loading
+- View user details with nested posts and todos
 
-Dark/light theme toggle
+- Pull-to-refresh functionality
 
-Clean and maintainable code structure using the BLoC pattern
+- Pagination with lazy loading
 
-🧠 Architecture
-The app follows the Clean Architecture principles:
+- Dark/light theme toggle
 
-🧱 Layers
-Presentation Layer (UI + BLoC):
+- Clean architecture using BLoC pattern
 
-Contains screens and widgets
+- Responsive design
 
-BLoC manages state and events
+## 🧠 Architecture
 
-Domain Layer (Repositories):
+The app follows Clean Architecture principles with layered structure:
 
-Interfaces for fetching data from providers
+### 🧱 Layers
 
-Data Layer (Providers):
+1. **Presentation Layer** (UI + BLoC):
 
-Actual implementation of APIs using HTTP calls
+- Screens and widgets
 
-🧩 Design Patterns
-BLoC (for state management)
+- BLoC for state management
 
-Repository pattern (to abstract data sources)
+2. **Domain Layer** (Repositories):
 
-Dependency Injection using MultiRepositoryProvider
+- Interfaces for data sources
 
-📁 Folder Structure
+3. **Data Layer** (Providers):
+
+- API implementation using HTTP
+
+### 🧩 Design Patterns
+
+- **BLoC** for state management
+
+- **Repository pattern** to abstract data sources
+
+- **Dependency Injection** using `MultiRepositoryProvider`
+
+## 📁 Folder Structure
+
+```
+
 lib/
+
 │
+
 ├── blocs/
+
 │   ├── user_bloc.dart
+
 │   ├── user_event.dart
+
 │   └── user_state.dart
+
 │
+
 ├── models/
+
 │   ├── user.dart
+
 │   ├── post.dart
+
 │   └── todo.dart
+
 │
+
 ├── providers/
+
 │   └── user_api_provider.dart
+
 │
+
 ├── repositories/
+
 │   ├── user_repository.dart
+
 │   ├── post_repository.dart
+
 │   └── todo_repository.dart
+
 │
+
 ├── screens/
+
 │   └── user_list_screen.dart
+
 │
+
 └── main.dart
 
-🌗 Light/Dark Theme Toggle
-Easily switch between light and dark modes from the AppBar. The theme state is maintained using a ValueNotifier and can be extended to persist across sessions.
+```
 
-📸 Screenshots
-<p align="center"> <img src="assets/screenshots/home_light.png" width="300"/>
-<img src="assets/screenshots/home_dark.png" width="300"/>
-<img src="assets/screenshots/user_details.png" width="300"/> 
-<img src="assets/screenshots/pull_to_refresh.png" width="300"/> 
-<img src="assets/screenshots/theme_toggle.png" width="300"/> </p>
+## 🌗 Theme Management
 
-🎥 Video Preview
-https://user-images.githubusercontent.com/your-video-id/demo-preview.mp4
+Switch between light/dark modes via AppBar. Theme state is maintained using `ValueNotifier`.
 
-(Replace with actual video URL or GitHub-uploaded asset)
+## 📸 Screenshots
 
-👤 By : 
-Shivam Yadav
-📧 shivam16yadav16@gmail.com
+<p align="center">
+
+<img src="assets/screenshots/home_light.png" width="250" />
+
+<img src="assets/screenshots/home_dark.png" width="250" />
+
+<img src="assets/screenshots/user_details.png" width="250" />
+
+<br>
+
+<img src="assets/screenshots/pull_to_refresh.png" width="250" />
+
+<img src="assets/screenshots/theme_toggle.png" width="250" />
+
+</p>
+
+## 🎥 Video Preview
+
+[App Demo Video](https://your-video-url-here)
+
+## 👤 Author
+
+**Shivam Yadav**
+
+📧 [shivam16yadav16@gmail.com](mailto:shivam16yadav16@gmail.com)
 
